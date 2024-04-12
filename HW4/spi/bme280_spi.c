@@ -126,7 +126,7 @@ int main() {
     // for (int i=0; i < TRI_NUM; i++) {
     //     if (i < TRI_NUM/4){
     //         tri[i] = 511 + (i * step)*511*4;
-    //     } else if (i < TRI_NUM/2 && i >= TRI_NUM/4) {
+    //     } else if (i < 3*(TRI_NUM/4) && i >= TRI_NUM/4) {
     //         tri[i] = (511*3) - (i * step)*511*4;
     //     } else {
     //         -(511*3) + (i * step)*511*4;

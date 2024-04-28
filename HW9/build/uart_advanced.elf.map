@@ -1510,9 +1510,9 @@ Discarded input sections
  .debug_frame   0x00000000      0x14c CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
- .text          0x00000000        0x0 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc6NMyCL.o
- .data          0x00000000        0x0 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc6NMyCL.o
- .bss           0x00000000        0x0 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc6NMyCL.o
+ .text          0x00000000        0x0 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc08nakS.o
+ .data          0x00000000        0x0 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc08nakS.o
+ .bss           0x00000000        0x0 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc08nakS.o
  .data          0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
@@ -1950,7 +1950,7 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc6NMyCL.o
+ .boot2         0x10000000      0x100 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc08nakS.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3164,365 +3164,365 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .iplt           0x1000d348        0x0
  .iplt          0x1000d348        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x1000d348     0x8a78
+.rodata         0x1000d348     0x8a80
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.on_uart_rx.str1.4
-                0x1000d348     0x10ce CMakeFiles/uart_advanced.dir/uart_advanced.c.obj
-                                  0xf (size before relaxing)
+                0x1000d348     0x10d2 CMakeFiles/uart_advanced.dir/uart_advanced.c.obj
+                                 0x16 (size before relaxing)
  .rodata.main.str1.4
-                0x1000e416       0x34 CMakeFiles/uart_advanced.dir/uart_advanced.c.obj
+                0x1000e41a       0x34 CMakeFiles/uart_advanced.dir/uart_advanced.c.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x1000e416       0x1b CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x1000e41a       0x1b CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.resolve_branch.str1.4
-                0x1000e416       0x61 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0x61 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.make_branch.str1.4
-                0x1000e416       0x30 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0x30 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.insert_branch_and_link.str1.4
-                0x1000e416       0x10 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0x10 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_set_exclusive_handler.str1.4
-                0x1000e416       0x36 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0x36 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_add_shared_handler.str1.4
-                0x1000e416       0xc2 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0xc2 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_remove_handler.str1.4
-                0x1000e416       0x3a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0x3a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_add_tail_to_free_list.str1.4
-                0x1000e416       0x3a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e41a       0x3a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.user_irq_claim_unused.str1.4
-                0x1000e416       0x1b CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000e416        0x2 
+                0x1000e41a       0x1b CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000e41a        0x2 
  .rodata.__func__.0
-                0x1000e418       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000e432        0x2 
+                0x1000e41c       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000e436        0x2 
  .rodata.__func__.1
-                0x1000e434       0x17 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000e44b        0x1 
+                0x1000e438       0x17 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000e44f        0x1 
  .rodata.__func__.2
-                0x1000e44c       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000e45f        0x1 
+                0x1000e450       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000e463        0x1 
  .rodata.__func__.3
-                0x1000e460        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e464        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.4
-                0x1000e46c        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000e47b        0x1 
+                0x1000e470        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000e47f        0x1 
  .rodata.__func__.5
-                0x1000e47c       0x17 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000e493        0x1 
+                0x1000e480       0x17 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000e497        0x1 
  .rodata.__func__.6
-                0x1000e494       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000e498       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x1000e4ae       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000e4b2       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.str1.4
-                0x1000e4ae       0x95 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x1000e4ae        0x2 
+                0x1000e4b2       0x95 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x1000e4b2        0x2 
  .rodata.__func__.1
-                0x1000e4b0        0xb CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x1000e4bb        0x1 
+                0x1000e4b4        0xb CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x1000e4bf        0x1 
  .rodata.__func__.3
-                0x1000e4bc       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000e4c0       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.__func__.4
-                0x1000e4d4       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000e4d8       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.get_entry.str1.4
-                0x1000e4e9       0x67 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x67 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x1000e4e9       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_get_node.str1.4
-                0x1000e4e9       0x72 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x72 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x1000e4e9       0x2e CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x2e CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_insert_node.str1.4
-                0x1000e4e9        0x3 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed        0x3 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_free_node.str1.4
-                0x1000e4e9       0x38 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x38 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.add_alarm_under_lock.str1.4
-                0x1000e4e9       0x28 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x28 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x1000e4e9       0x60 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x60 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.alarm_pool_get_default.str1.4
-                0x1000e4e9       0x21 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x21 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.alarm_pool_cancel_alarm.str1.4
-                0x1000e4e9       0x27 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4ed       0x27 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.sleep_until.str1.4
-                0x1000e4e9       0x4d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e4e9        0x3 
+                0x1000e4ed       0x4d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e4ed        0x3 
  .rodata.__func__.1
-                0x1000e4ec       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e4f0       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.3
-                0x1000e504       0x17 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e51b        0x1 
+                0x1000e508       0x17 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e51f        0x1 
  .rodata.__func__.4
-                0x1000e51c       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e52e        0x2 
+                0x1000e520       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e532        0x2 
  .rodata.__func__.5
-                0x1000e530        0xd CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e53d        0x3 
+                0x1000e534        0xd CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e541        0x3 
  .rodata.__func__.6
-                0x1000e540       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e552        0x2 
+                0x1000e544       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e556        0x2 
  .rodata.__func__.7
-                0x1000e554        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e563        0x1 
+                0x1000e558        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e567        0x1 
  .rodata.__func__.8
-                0x1000e564        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e568        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.9
-                0x1000e570       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e585        0x3 
+                0x1000e574       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e589        0x3 
  .rodata.__func__.10
-                0x1000e588       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e59d        0x3 
+                0x1000e58c       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e5a1        0x3 
  .rodata.__func__.11
-                0x1000e5a0       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e5ba        0x2 
+                0x1000e5a4       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e5be        0x2 
  .rodata.__func__.12
-                0x1000e5bc        0xa CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000e5c6        0x2 
+                0x1000e5c0        0xa CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000e5ca        0x6 
  .rodata.at_the_end_of_time
-                0x1000e5c8        0x8 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000e5c8                at_the_end_of_time
+                0x1000e5d0        0x8 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000e5d0                at_the_end_of_time
  .rodata.update_us_since_boot.str1.4
-                0x1000e5d0       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000e5d8       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hardware_alarm_claim.str1.4
-                0x1000e5d0       0x22 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000e5d8       0x22 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hardware_alarm_set_target.str1.4
-                0x1000e5d0       0x71 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000e5d8       0x71 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.__func__.0
-                0x1000e5d0       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x1000e5ea        0x2 
+                0x1000e5d8       0x1a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x1000e5f2        0x2 
  .rodata.__func__.1
-                0x1000e5ec       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000e5f4       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.ph_get_node.str1.4
-                0x1000e601       0x72 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000e609       0x72 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x1000e601       0x2e CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000e609       0x2e CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_remove_any_head.str1.4
-                0x1000e601       0xac CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000e609       0xac CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_remove_and_free_node.str1.4
-                0x1000e601       0x26 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x1000e601        0x3 
+                0x1000e609       0x26 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x1000e609        0x3 
  .rodata.__func__.0
-                0x1000e604       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000e60c       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.__func__.1
-                0x1000e61c       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x1000e62f        0x1 
+                0x1000e624       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x1000e637        0x1 
  .rodata.__func__.2
-                0x1000e630       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x1000e642        0x2 
+                0x1000e638       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x1000e64a        0x2 
  .rodata.__func__.3
-                0x1000e644        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000e64c        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.clock_configure.str1.4
-                0x1000e650       0x63 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x1000e658       0x63 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.__func__.1
-                0x1000e650       0x10 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x1000e658       0x10 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.pll_init.str1.4
-                0x1000e660      0x130 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x1000e668      0x130 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .rodata.__func__.0
-                0x1000e660        0x9 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x1000e668        0x9 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .rodata.__assert_func.str1.4
-                0x1000e669       0x43 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000e671       0x43 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.runtime_init.str1.4
-                0x1000e669       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000e671       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.panic.str1.4
-                0x1000e669       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x1000e669        0x3 
+                0x1000e671       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x1000e671        0x3 
  .rodata.__func__.2
-                0x1000e66c        0xd CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000e674        0xd CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x1000e679       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x1000e679        0x3 
+                0x1000e681       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x1000e681        0x3 
  .rodata._vsnprintf
-                0x1000e67c      0x19c CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000e684      0x19c CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x1000e818       0x50 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000e820       0x50 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__aeabi_double_init.str1.4
-                0x1000e868       0xa8 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x1000e870       0xa8 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__func__.0
-                0x1000e868       0x14 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x1000e870       0x14 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__aeabi_float_init.str1.4
-                0x1000e87c       0x8a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x1000e884       0x8a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .rodata.__func__.0
-                0x1000e87c       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x1000e884       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .rodata.check_alloc.str1.4
-                0x1000e88f        0xe CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x1000e897        0xe CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .rodata.str1.4
-                0x1000e88f       0x44 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- *fill*         0x1000e88f        0x1 
+                0x1000e897       0x44 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ *fill*         0x1000e897        0x1 
  .rodata.__bi_81
-                0x1000e890        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000e898        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x1000e89c        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000e8a4        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x1000e8a8        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000e8b0        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x1000e8b4       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000e8bc       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.crlf_str.2
-                0x1000e8b4        0x2 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000e8b6        0x2 
+                0x1000e8bc        0x2 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x1000e8be        0x2 
  .rodata.__func__.3
-                0x1000e8b8       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000e8cd        0x3 
+                0x1000e8c0       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x1000e8d5        0x3 
  .rodata._resetd_driver
-                0x1000e8d0       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x1000e8d8       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x1000e8e8       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1000e8f0       0x6d CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.stdio_usb_init.str1.4
-                0x1000e8e8       0x59 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1000e8f0       0x59 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x1000e8e8       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1000e8f0       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.__bi_182.0
-                0x1000e8e8        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1000e8f0        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.__func__.1
-                0x1000e8f4        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x1000e903        0x1 
+                0x1000e8fc        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x1000e90b        0x1 
  .rodata.__func__.3
-                0x1000e904       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1000e90c       0x15 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x1000e919       0x2a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x1000e919        0x3 
+                0x1000e921       0x2a CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x1000e921        0x3 
  .rodata.usbd_desc_str
-                0x1000e91c       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1000e924       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_cfg
-                0x1000e934       0x54 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1000e93c       0x54 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x1000e988       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1000e990       0x12 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.pico_get_unique_board_id_string.str1.4
-                0x1000e99a       0x59 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- *fill*         0x1000e99a        0x2 
+                0x1000e9a2       0x59 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ *fill*         0x1000e9a2        0x2 
  .rodata.__func__.0
-                0x1000e99c       0x20 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x1000e9a4       0x20 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .rodata.str1.4
-                0x1000e9bc      0x166 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x1000e9c4      0x166 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .rodata.__func__.0
-                0x1000e9bc        0xd CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x1000e9c4        0xd CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .rodata._hw_endpoint_alloc.str1.4
-                0x1000e9c9       0xc1 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000e9d1       0xc1 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x1000e9c9       0x14 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000e9d1       0x14 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.dcd_int_enable.str1.4
-                0x1000e9c9        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000e9c9        0x3 
+                0x1000e9d1        0xc CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x1000e9d1        0x3 
  .rodata.__func__.0
-                0x1000e9cc        0xe CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000e9da        0x2 
+                0x1000e9d4        0xe CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x1000e9e2        0x2 
  .rodata.__func__.1
-                0x1000e9dc        0xe CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000e9ea        0x2 
+                0x1000e9e4        0xe CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x1000e9f2        0x2 
  .rodata.__func__.3
-                0x1000e9ec       0x10 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000e9f4       0x10 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.__func__.5
-                0x1000e9fc        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000ea0b        0x1 
+                0x1000ea04        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x1000ea13        0x1 
  .rodata.__func__.6
-                0x1000ea0c       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000ea1f        0x1 
+                0x1000ea14       0x13 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x1000ea27        0x1 
  .rodata.__func__.7
-                0x1000ea20        0x9 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000ea28        0x9 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x1000ea29       0xf3 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x1000ea29        0x3 
+                0x1000ea31       0xf3 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x1000ea31        0x3 
  .rodata.__func__.0
-                0x1000ea2c        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x1000ea3b        0x1 
+                0x1000ea34        0xf CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x1000ea43        0x1 
  .rodata.process_get_descriptor
-                0x1000ea3c       0x40 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x1000ea44       0x40 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.process_control_request
-                0x1000ea7c       0x28 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x1000ea84       0x28 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.tud_task_ext
-                0x1000eaa4       0x24 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x1000eaac       0x24 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x1000eac8       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x1000ead0       0x18 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.__svfscanf_r.str1.4
-                0x1000eae0        0x9 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-vfscanf.o)
+                0x1000eae8        0x9 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-vfscanf.o)
  .rodata.__svfscanf_r
-                0x1000eae0      0x3cc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-vfscanf.o)
+                0x1000eae8      0x3cc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-vfscanf.o)
  .rodata.basefix.0
-                0x1000eeac       0x22 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-vfscanf.o)
+                0x1000eeb4       0x22 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-vfscanf.o)
  .rodata._strtod_l.str1.4
-                0x1000eece       0x15 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
- *fill*         0x1000eece        0x2 
+                0x1000eed6       0x15 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
+ *fill*         0x1000eed6        0x2 
  .rodata._strtod_l
-                0x1000eed0       0xd0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
+                0x1000eed8       0xd0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
  .rodata.fpinan.0
-                0x1000efa0       0x14 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
- .rodata.fpi.1  0x1000efb4       0x14 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
+                0x1000efa8       0x14 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
+ .rodata.fpi.1  0x1000efbc       0x14 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
  .rodata.tinytens
-                0x1000efc8       0x28 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
+                0x1000efd0       0x28 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtod.o)
  .rodata.str1.4
-                0x1000eff0       0x4c /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-locale.o)
+                0x1000eff8       0x4c /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-locale.o)
  .rodata._mbrtowc_r.str1.4
-                0x1000eff0        0x1 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mbrtowc.o)
+                0x1000eff8        0x1 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mbrtowc.o)
  .rodata._ctype_
-                0x1000eff0      0x101 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
-                0x1000eff0                _ctype_
- *fill*         0x1000f0f1        0x3 
+                0x1000eff8      0x101 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
+                0x1000eff8                _ctype_
+ *fill*         0x1000f0f9        0x3 
  .rodata.__jp2uc
-                0x1000f0f4       0x20 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+                0x1000f0fc       0x20 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
  .rodata._jp2uc_l.str1.4
-                0x1000f114       0x12 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- .rodata.d02f4  0x1000f114     0x1a7c /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- .rodata.b02cf  0x10010b90     0x172a /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- *fill*         0x100122ba        0x2 
- .rodata.a8     0x100122bc       0x40 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- .rodata.a7     0x100122fc       0xa2 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- *fill*         0x1001239e        0x2 
- .rodata.a6     0x100123a0       0x70 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- .rodata.a3     0x10012410       0x5b /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- *fill*         0x1001246b        0x1 
- .rodata.a2     0x1001246c       0xbc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
- .rodata.a1     0x10012528       0xbc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+                0x1000f11c       0x12 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ .rodata.d02f4  0x1000f11c     0x1a7c /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ .rodata.b02cf  0x10010b98     0x172a /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ *fill*         0x100122c2        0x2 
+ .rodata.a8     0x100122c4       0x40 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ .rodata.a7     0x10012304       0xa2 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ *fill*         0x100123a6        0x2 
+ .rodata.a6     0x100123a8       0x70 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ .rodata.a3     0x10012418       0x5b /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ *fill*         0x10012473        0x1 
+ .rodata.a2     0x10012474       0xbc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
+ .rodata.a1     0x10012530       0xbc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-jp2uc.o)
  .rodata.categories
-                0x100125e4     0x35dc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-categories.o)
+                0x100125ec     0x35dc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-categories.o)
  .rodata.__gethex.str1.4
-                0x10015bc0       0x81 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-gdtoa-gethex.o)
+                0x10015bc8       0x81 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-gdtoa-gethex.o)
  .rodata.__hexdig
-                0x10015bc0      0x100 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-gdtoa-gethex.o)
-                0x10015bc0                __hexdig
+                0x10015bc8      0x100 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-gdtoa-gethex.o)
+                0x10015bc8                __hexdig
  .rodata.__multadd.str1.4
-                0x10015cc0       0x76 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
- .rodata.p05.0  0x10015cc0        0xc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
- *fill*         0x10015ccc        0x4 
+                0x10015cc8       0x76 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
+ .rodata.p05.0  0x10015cc8        0xc /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
+ *fill*         0x10015cd4        0x4 
  .rodata.__mprec_bigtens
-                0x10015cd0       0x28 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
-                0x10015cd0                __mprec_bigtens
+                0x10015cd8       0x28 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
+                0x10015cd8                __mprec_bigtens
  .rodata.__mprec_tens
-                0x10015cf8       0xc8 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
-                0x10015cf8                __mprec_tens
-                0x10015dc0                        . = ALIGN (0x4)
+                0x10015d00       0xc8 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mprec.o)
+                0x10015d00                __mprec_tens
+                0x10015dc8                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10015dc0                        . = ALIGN (0x4)
+                0x10015dc8                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10015dc0                        __exidx_start = .
+                0x10015dc8                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10015dc0                        __exidx_end = .
-                0x10015dc0                        . = ALIGN (0x4)
-                0x10015dc0                        __binary_info_start = .
+                0x10015dc8                        __exidx_end = .
+                0x10015dc8                        . = ALIGN (0x4)
+                0x10015dc8                        __binary_info_start = .
 
-.binary_info    0x10015dc0       0x20
+.binary_info    0x10015dc8       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr81
-                0x10015dc0        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
-                0x10015dc4        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
                 0x10015dc8        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
+ .binary_info.keep.__bi_ptr75
                 0x10015dcc        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
+ .binary_info.keep.__bi_ptr50
                 0x10015dd0        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
+ .binary_info.keep.__bi_ptr44
                 0x10015dd4        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr22
+ .binary_info.keep.__bi_ptr38
                 0x10015dd8        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr30
+                0x10015ddc        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr22
+                0x10015de0        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr182
-                0x10015ddc        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10015de0                        __binary_info_end = .
+                0x10015de4        0x4 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10015de8                        __binary_info_end = .
 
-.rel.dyn        0x10015de0        0x0
- .rel.iplt      0x10015de0        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10015de0                        . = ALIGN (0x4)
+.rel.dyn        0x10015de8        0x0
+ .rel.iplt      0x10015de8        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10015de8                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3531,7 +3531,7 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x20000000       0xc0 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0     0x11f0 load address 0x10015de0
+.data           0x200000c0     0x11f0 load address 0x10015de8
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3690,36 +3690,36 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(.jcr)
                 0x200012b0                        . = ALIGN (0x4)
                 0x200012b0                        __data_end__ = .
-                0x10015de0                        __etext = LOADADDR (.data)
+                0x10015de8                        __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x200012b0        0x0 load address 0x10016fd0
+                0x200012b0        0x0 load address 0x10016fd8
  .tm_clone_table
                 0x200012b0        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x200012b0        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x200012b0        0x0 load address 0x10016fd0
+.igot.plt       0x200012b0        0x0 load address 0x10016fd8
  .igot.plt      0x200012b0        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x200012b0        0x0 load address 0x10016fd0
+                0x200012b0        0x0 load address 0x10016fd8
                 0x200012b0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10016fd0
+.scratch_x      0x20040000        0x0 load address 0x10016fd8
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10016fd0                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10016fd8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10016fd0
+.scratch_y      0x20041000        0x0 load address 0x10016fd8
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10016fd0                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10016fd8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x200012b0      0xf6c
                 0x200012b0                        . = ALIGN (0x4)
@@ -3870,8 +3870,8 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10016fd0        0x0
-                0x10016fd0                        PROVIDE (__flash_binary_end = .)
+.flash_end      0x10016fd8        0x0
+                0x10016fd8                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3949,7 +3949,7 @@ LOAD CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tiny
 LOAD CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-LOAD /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc6NMyCL.o
+LOAD /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc08nakS.o
 LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -4068,7 +4068,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007ce       0x2c CMakeFiles/uart_advanced.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x000007fa       0x22 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc6NMyCL.o
+                0x000007fa       0x22 /var/folders/f5/lb32ykv162z1ymk2m790j7j80000gp/T//cc08nakS.o
  .ARM.attributes
                 0x0000081c       0x1e /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

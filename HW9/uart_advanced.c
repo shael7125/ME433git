@@ -34,7 +34,7 @@ void on_uart_rx() {
         if (ch == '\n') {
             m[i] = 0;
             i = 0;
-            printf("From Zero: %s\n",m);
+            printf("Virginia replied: %s\n",m);
         } else {
             m[i] = ch;
             i++;
@@ -105,7 +105,7 @@ int main() {
         
         int ifromcomp = 0;
         scanf("%d",&ifromcomp);
-        printf("Comp sent : %d\n", ifromcomp);
+        printf("Shael said: %d\n", ifromcomp);
 
         char txm[100];
         sprintf(txm, "%d\n", ifromcomp);

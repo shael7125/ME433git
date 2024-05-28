@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named imu
+# Target rules for targets named mouse
 
 # Build rule for target.
-imu: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imu
-.PHONY : imu
+mouse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mouse
+.PHONY : mouse
 
 # fast build rule for target.
-imu/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/build
-.PHONY : imu/fast
+mouse/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
+.PHONY : mouse/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -207,12 +207,36 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
+
+# target to build an object file
+Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+
+Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
+
+# target to preprocess a source file
+Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+
+Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
+
+# target to generate assembly for a file
+Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -220,7 +244,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -228,7 +252,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -236,7 +260,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: 
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -244,7 +268,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: Us
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -252,7 +276,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: Us
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -260,7 +284,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: 
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -268,7 +292,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: Us
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -276,7 +300,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: Us
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -284,7 +308,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.ob
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -292,7 +316,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i:
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -300,7 +324,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s:
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -308,7 +332,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: 
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -316,7 +340,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: Us
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -324,7 +348,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: Us
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -332,7 +356,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -340,7 +364,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: 
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -348,7 +372,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: 
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -356,7 +380,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: 
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -364,7 +388,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: Us
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -372,7 +396,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: Us
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -380,7 +404,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -388,7 +412,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -396,7 +420,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -404,7 +428,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: 
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -412,7 +436,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: Us
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -420,7 +444,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: Us
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -428,7 +452,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -436,7 +460,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -444,7 +468,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -452,7 +476,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -460,7 +484,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -468,7 +492,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -476,7 +500,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.o
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -484,7 +508,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -492,7 +516,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -500,7 +524,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: User
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -508,7 +532,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: Users/
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -516,7 +540,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: Users/
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -524,7 +548,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: Users/sha
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -532,7 +556,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i: Users/shael
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -540,7 +564,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s: Users/shael
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -548,7 +572,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -556,7 +580,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -564,7 +588,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -572,7 +596,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp204
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -580,7 +604,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp204
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -588,7 +612,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp204
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -596,7 +620,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp204
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -604,7 +628,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp204
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -612,7 +636,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp204
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.obj: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -620,7 +644,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.obj: Users/shaelmurth
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.i: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -628,7 +652,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.i: Users/shaelmurthy/
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.s: Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -636,7 +660,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.s: Users/shaelmurthy/
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -644,7 +668,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.obj:
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -652,7 +676,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.i: U
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -660,7 +684,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.s: U
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -668,7 +692,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -676,7 +700,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/sh
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -684,7 +708,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/sh
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -692,7 +716,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/shae
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -700,7 +724,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.i: Users/shaelm
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -708,7 +732,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.s: Users/shaelm
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -716,7 +740,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.obj: Users/shaelm
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -724,7 +748,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.i: Users/shaelmur
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -732,7 +756,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.s: Users/shaelmur
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -740,7 +764,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.obj: Users/shael
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.i
@@ -748,7 +772,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.i: Users/shaelmu
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.s
@@ -756,7 +780,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.s: Users/shaelmu
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/time.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -764,7 +788,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -772,7 +796,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -780,7 +804,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -788,7 +812,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.obj: Users/s
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -796,7 +820,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.i: Users/sha
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -804,7 +828,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.s: Users/sha
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -812,7 +836,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.obj: Users/shae
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -820,7 +844,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.i: Users/shaelm
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -828,7 +852,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.s: Users/shaelm
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -836,7 +860,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.obj: Users/shae
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -844,7 +868,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.i: Users/shaelm
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -852,7 +876,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.s: Users/shaelm
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/common/pico_util/queue.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -860,7 +884,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -868,7 +892,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -876,7 +900,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -884,7 +908,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj:
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -892,7 +916,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: U
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -900,7 +924,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: U
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -908,7 +932,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.ob
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -916,7 +940,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -924,7 +948,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -932,7 +956,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -940,7 +964,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Use
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -948,7 +972,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -956,7 +980,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
@@ -964,7 +988,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: Users
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -972,7 +996,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: Users/s
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -980,7 +1004,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: Users/s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -988,7 +1012,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -996,7 +1020,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/s
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1004,7 +1028,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1012,7 +1036,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_ch
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -1020,7 +1044,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: Users
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1028,7 +1052,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/s
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1036,7 +1060,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1044,7 +1068,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Use
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1052,7 +1076,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1060,7 +1084,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1068,7 +1092,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1076,7 +1100,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1084,7 +1108,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1092,7 +1116,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Use
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1100,7 +1124,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1108,7 +1132,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1116,7 +1140,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Use
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1124,7 +1148,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1132,7 +1156,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1140,7 +1164,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1148,7 +1172,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1156,7 +1180,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1164,7 +1188,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Use
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1172,7 +1196,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1180,7 +1204,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1188,7 +1212,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1196,7 +1220,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1204,7 +1228,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1212,7 +1236,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1220,7 +1244,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1228,7 +1252,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.ob
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1236,7 +1260,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1244,7 +1268,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1252,7 +1276,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1260,7 +1284,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.obj
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1268,7 +1292,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i: 
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1276,7 +1300,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s: 
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1284,7 +1308,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_s
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1292,7 +1316,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1300,7 +1324,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1308,7 +1332,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1316,7 +1340,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj:
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1324,7 +1348,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.o
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1332,7 +1356,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1340,7 +1364,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1348,7 +1372,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: 
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1356,7 +1380,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Us
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1364,7 +1388,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Us
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1372,7 +1396,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shi
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1380,7 +1404,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_o
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1388,7 +1412,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1396,7 +1420,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: 
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1404,7 +1428,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: 
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1412,7 +1436,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1420,7 +1444,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.obj:
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1428,7 +1452,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.i: U
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1436,7 +1460,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.s: U
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1444,7 +1468,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Use
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1452,7 +1476,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1460,7 +1484,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1468,7 +1492,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: U
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1476,7 +1500,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Use
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1484,7 +1508,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Use
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1492,7 +1516,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_i
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1500,7 +1524,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_i
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1508,7 +1532,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_i
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1516,7 +1540,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1524,7 +1548,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_dele
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1532,7 +1556,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_dele
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1540,7 +1564,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_dele
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1548,7 +1572,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1556,7 +1580,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/s
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1564,87 +1588,39 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/s
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
+Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
 
 # target to build an object file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
-
-# target to preprocess a source file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
-
-# target to generate assembly for a file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
-
-# target to build an object file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
 
 # target to preprocess a source file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
-
-# target to generate assembly for a file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
-
-# target to build an object file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
-
-# target to preprocess a source file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
 
 # target to generate assembly for a file
-Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1652,7 +1628,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1660,7 +1636,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -1668,7 +1644,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.ob
 
 # target to build an object file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1676,7 +1652,7 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i:
 
 # target to preprocess a source file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1684,32 +1660,56 @@ Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s:
 
 # target to generate assembly for a file
 Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-imu.obj: imu.c.obj
-.PHONY : imu.obj
+mouse.obj: mouse.c.obj
+.PHONY : mouse.obj
 
 # target to build an object file
-imu.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/imu.c.obj
-.PHONY : imu.c.obj
+mouse.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.c.obj
+.PHONY : mouse.c.obj
 
-imu.i: imu.c.i
-.PHONY : imu.i
+mouse.i: mouse.c.i
+.PHONY : mouse.i
 
 # target to preprocess a source file
-imu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/imu.c.i
-.PHONY : imu.c.i
+mouse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.c.i
+.PHONY : mouse.c.i
 
-imu.s: imu.c.s
-.PHONY : imu.s
+mouse.s: mouse.c.s
+.PHONY : mouse.s
 
 # target to generate assembly for a file
-imu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu.dir/build.make CMakeFiles/imu.dir/imu.c.s
-.PHONY : imu.c.s
+mouse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.c.s
+.PHONY : mouse.c.s
+
+usb_descriptors.obj: usb_descriptors.c.obj
+.PHONY : usb_descriptors.obj
+
+# target to build an object file
+usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/usb_descriptors.c.obj
+.PHONY : usb_descriptors.c.obj
+
+usb_descriptors.i: usb_descriptors.c.i
+.PHONY : usb_descriptors.i
+
+# target to preprocess a source file
+usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/usb_descriptors.c.i
+.PHONY : usb_descriptors.c.i
+
+usb_descriptors.s: usb_descriptors.c.s
+.PHONY : usb_descriptors.s
+
+# target to generate assembly for a file
+usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/usb_descriptors.c.s
+.PHONY : usb_descriptors.c.s
 
 # Help Target
 help:
@@ -1725,7 +1725,10 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
-	@echo "... imu"
+	@echo "... mouse"
+	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
+	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
+	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1896,24 +1899,21 @@ help:
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
-	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
+	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
+	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
+	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... Users/shaelmurthy/me433/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... imu.obj"
-	@echo "... imu.i"
-	@echo "... imu.s"
+	@echo "... mouse.obj"
+	@echo "... mouse.i"
+	@echo "... mouse.s"
+	@echo "... usb_descriptors.obj"
+	@echo "... usb_descriptors.i"
+	@echo "... usb_descriptors.s"
 .PHONY : help
 
 

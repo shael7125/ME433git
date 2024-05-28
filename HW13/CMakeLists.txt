@@ -9,15 +9,24 @@ project(my_project)
 # initialize the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-add_executable(imu
-    imu.c
+add_executable(mouse
+    mouse.c
 )
+set(FAMILY rp2040)
+set(BOARD pico_sdk)
+set(TINYUSB_FAMILY_PROJECT_NAME_PREFIX "tinyusb_dev_")
 
+target_sources(mouse PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR}/mouse.c
+        ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
+        )
+target_include_directories(mouse PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR})
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(imu pico_stdlib hardware_i2c)
+target_link_libraries(mouse PUBLIC pico_stdlib pico_unique_id tinyusb_device tinyusb_board hardware_i2c)
 
-pico_enable_stdio_usb(imu 1)
-pico_enable_stdio_uart(imu 0)
+# pico_enable_stdio_usb(mouse 1)
+# pico_enable_stdio_uart(mouse 0)
 
 # create map/bin/hex/uf2 file in addition to ELF.
-pico_add_extra_outputs(imu)
+pico_add_extra_outputs(mouse)
